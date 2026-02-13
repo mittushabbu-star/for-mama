@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Valentine's Day ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background: linear-gradient(135deg,#ff758c,#ff7eb3);
+color:white;
+overflow-x:hidden;
+text-align:center;
+}
+
+/* floating flowers */
+.flower{
+position:fixed;
+top:-50px;
+font-size:24px;
+animation: fall linear infinite;
+opacity:0.8;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh) rotate(360deg);
+}
+}
+
+.screen{
+display:none;
+min-height:100vh;
+padding:40px 20px;
+overflow-y:auto;
+}
+
+.active{
+display:block;
+animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+h1{
+font-family:'Dancing Script',cursive;
+font-size:2.5rem;
+margin-bottom:20px;
+}
+
+button{
+padding:12px 25px;
+margin:15px;
+border:none;
+border-radius:30px;
+background:white;
+color:#ff4f81;
+font-weight:bold;
+font-size:1rem;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#ff4f81;
+color:white;
+transform:scale(1.05);
+}
+
+.gifts{
+display:flex;
+flex-direction:column;
+gap:20px;
+margin-top:20px;
+}
+
+.gift{
+background:rgba(255,255,255,0.2);
+padding:25px;
+border-radius:20px;
+font-size:1.3rem;
+cursor:pointer;
+transition:0.4s;
+}
+
+.gift:hover{
+background:rgba(255,255,255,0.4);
+transform:scale(1.05);
+}
+
+.note{
+margin-top:20px;
+line-height:1.8;
+font-size:1rem;
+white-space:pre-wrap;
+}
+
+iframe{
+margin-top:15px;
+border-radius:15px;
+}
+
+.footer{
+margin-top:30px;
+font-size:1.2rem;
+font-family:'Dancing Script',cursive;
+}
+</style>
+</head>
+
+<body>
+
+<script>
+function showScreen(id){
+document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+window.scrollTo(0,0);
+}
+
+/* flowers */
+for(let i=0;i<25;i++){
+let flower=document.createElement('div');
+flower.classList.add('flower');
+flower.innerHTML="🌹";
+flower.style.left=Math.random()*100+"vw";
+flower.style.animationDuration=(5+Math.random()*5)+"s";
+flower.style.fontSize=(15+Math.random()*25)+"px";
+document.body.appendChild(flower);
+}
+</script>
+
+<!-- HOME -->
+<div id="home" class="screen active">
+<h1>Happy Valentine's Day ❤️</h1>
+<p>To the most beautiful soul in my life,  
+you are my happiness, my peace, and my forever.  
+Tonight is all about you my love 💕</p>
+<button onclick="showScreen('gifts')">Open Your Surprises 🎁</button>
+</div>
+
+<!-- GIFTS MENU -->
+<div id="gifts" class="screen">
+<h1>Your 3 Gifts 💝</h1>
+<div class="gifts">
+<div class="gift" onclick="showScreen('gift1')">🎵 Gift 1</div>
+<div class="gift" onclick="showScreen('gift2')">💖 Gift 2</div>
+<div class="gift" onclick="showScreen('gift3')">💌 Gift 3</div>
+</div>
+<button onclick="showScreen('home')">Back Home</button>
+</div>
+
+<!-- GIFT 1 -->
+<div id="gift1" class="screen">
+<h1>Your Favorite Songs 🎶</h1>
+<div class="note">
+hiiii babyyyyyy these are some of ur favorite songss ik ur so so so soooo obsessed with themmmmm
+</div>
+
+<iframe width="300" height="170" src="https://www.youtube.com/embed/5NJk_JVdPyo" allowfullscreen></iframe>
+<iframe width="300" height="170" src="https://www.youtube.com/embed/6QJqFq2mN0I" allowfullscreen></iframe>
+<iframe width="300" height="170" src="https://www.youtube.com/embed/prmmCg5bKxA" allowfullscreen></iframe>
+<iframe width="300" height="170" src="https://www.youtube.com/embed/qFLhGq0060w" allowfullscreen></iframe>
+<iframe width="300" height="170" src="https://www.youtube.com/embed/sElE_BfQ67s" allowfullscreen></iframe>
+<iframe width="300" height="170" src="https://www.youtube.com/embed/TdrL3QxjyVw" allowfullscreen></iframe>
+
+<button onclick="showScreen('gifts')">Back to Gifts 🎁</button>
+</div>
+
+<!-- GIFT 2 -->
+<div id="gift2" class="screen">
+<h1>Everything I Remember About You 💕</h1>
+<div class="note">
+my babyyy ik u like alottttt of things (including mee) but i remember everythingg u likee babyyyy ur favorite colors are black,white,blue,pink ,red,yellow and purple , u LOVEE to dance in the rainn , ur favorite flowers are roses (red once to be exacttt) but u like all kinds of roses thoo, u like rabbits and kittiess, and u like monkeys and birds toooo, ur favorite songs are flateline ,eenie meenie, moth to a flame ,raindance , bad enough ,beautiful , the door , ordinary life, wildflower, sweater weather ,u LOVEE ice creammm (vanila and chocolate flavorsss) and u HATE strawberry flavor ,u like blue hoodies , ur favorite games are overwatcg ,cod ,bladeball,minecraft ,eveil dead, ur favorite country to visit is greece , ur favorite series are stranger things ,weak hero, , ur favorite movie series is the counjuring , ur favorite youtubers are sam and colby , life of luxury ,ur favorite nickname to be called is princess , and cutiee patootieeee, ur favorite fruiits are bananas and strawberry, ur favorite type of books are dark romace (ur favorite book was haunting adeline) u lovee iced coffee , ur OBSESSED with matchaaaa , u like it when sky changes color all of a sudden and u lovee it when its coldd and cloudyyyy , there isnt anything i would forget about u babyyyy i will forever remember everythinggg aboutt uuu babyyyyy ur my foreverrr and i will loveee u till the day i die
+</div>
+
+<button onclick="showScreen('gifts')">Back to Gifts 🎁</button>
+</div>
+
+<!-- GIFT 3 -->
+<div id="gift3" class="screen">
+<h1>A Special Letter 💌</h1>
+<div class="note">
+i love u how the moon loves the stars baby , truly and endlessly there isnt anyone who can stop me from loving u , i love u from sunrise till dawn , i love u with all my heart for every tomorrow thats to come , i love u with all i have and i will keep loving u , as ur husband i will love u till the day i die , there isnt anything more important than u baby , ur in my heart forever and ever and no one can take ur place baby ur the queen , and ur wish shall be my commanddd, for u i can do anything baby , ur not just my girlfriend ur my wifee and u mean the world to me babyy , baby keep one thing in mind baby ,my heart will love u till its last beat and it will never get tired baby , i love u now , tomorrow , and forever and ever
+</div>
+
+<button onclick="showScreen('ending')">Continue 💖</button>
+<button onclick="showScreen('gifts')">Back to Gifts 🎁</button>
+</div>
+
+<!-- ENDING -->
+<div id="ending" class="screen">
+<h1>Forever & Always 💍</h1>
+<p class="footer">
+i will choose u in all of the toughest days 💕
+</p>
+<button onclick="showScreen('home')">Start Again ❤️</button>
+</div>
+
+</body>
+</html>
